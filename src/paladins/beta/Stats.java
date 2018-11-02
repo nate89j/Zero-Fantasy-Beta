@@ -3,7 +3,7 @@ package paladins.beta;
 import java.util.*;
 
 public class Stats {
-    
+
     private int Stamina;
     private int Health;
     private int Armor;
@@ -13,7 +13,19 @@ public class Stats {
     private int Intelligence;
     private int StatPoints;
 
-    public Stats () {
+    public Stats (int Stamina, int Health, int Armor, int Speed, int Strength, int Charisma, int Intelligence, int StatPoints) {
+        this (Stamina, Health, Armor, Speed, Strength, Charisma, Intelligence);
+        this.StatPoints = StatPoints;
+    }
+
+    public Stats (int Stamina, int Health, int Armor, int Speed, int Strength, int Charisma, int Intelligence) {
+        this.Stamina = Stamina;
+        this.Health = Health;
+        this.Armor = Armor;
+        this.Speed = Speed;
+        this.Strength = Strength;
+        this.Charisma = Charisma;
+        this.Intelligence = Intelligence;
     }
 
     public int getStamina () {
@@ -79,6 +91,5 @@ public class Stats {
     public void setStatPoints (int StatPoints) {
         this.StatPoints = StatPoints;
     }
-    
 
 }
