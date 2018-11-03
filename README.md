@@ -1,4 +1,4 @@
-# No-Fantasy-Beta
+# Zero-Fantasy-Beta
 
 Indie text based adventure game.
 
